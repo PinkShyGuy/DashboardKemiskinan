@@ -1,0 +1,46 @@
+<div style="padding: 20px; font-size: 15px; line-height: 1.6;">
+
+  <p>
+    Tab <strong>"Peta"</strong> menampilkan peta interaktif yang menggambarkan indikator kemiskinan hingga tingkat kabupaten/kota berdasarkan data yang Anda unggah. 
+    Peta ini memadukan <em>shapefile</em> batas wilayah administrasi dengan data kemiskinan dari file Excel/CSV/SAV.
+    Anda dapat memilih indikator yang ingin divisualisasikan melalui dropdown yang tersedia.
+  </p>
+
+  <h4>Sumber Data:</h4>
+  <ul>
+    <li><strong>Shapefile</strong> (format <code>.zip</code>) yang berisi batas wilayah kabupaten/kota, harus memuat kolom <code>nmkab</code> (nama kabupaten/kota).</li>
+    <li><strong>Data kemiskinan</strong> yang Anda unggah harus mengandung kolom berikut:
+      <ul>
+        <li><code>Kab</code>: Nama kabupaten/kota (harus cocok dengan <code>nmkab</code> dari shapefile)</li>
+        <li><code>X1</code>: Jumlah penduduk miskin (ribu orang)</li>
+        <li><code>P0</code>: Persentase penduduk miskin</li>
+        <li><code>P1</code>: Indeks kedalaman kemiskinan</li>
+        <li><code>P2</code>: Indeks keparahan kemiskinan</li>
+        <li><code>X2</code>: Garis kemiskinan (Rp/kapita/bulan)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Validasi Nama Wilayah</h4>
+  <p>Sistem akan otomatis memeriksa kesesuaian nama wilayah antara shapefile (<code>nmkab</code>) dan data kemiskinan (<code>Kab</code>):</p>
+  <ul>
+    <li>Jika ada wilayah yang hanya ditemukan di shapefile, namun tidak ada di data kemiskinan, maka wilayah tetap ditampilkan tanpa warna (karena tidak ada data).</li>
+    <li>Jika ada wilayah yang hanya ditemukan di data kemiskinan, namun tidak ada di shapefile, maka data tersebut tidak akan ditampilkan di peta.</li>
+    <li>Daftar wilayah yang tidak cocok ditampilkan di bagian <strong>“Validasi Nama Wilayah”</strong> di bawah peta.</li>
+  </ul>
+
+  <h4>Interpretasi Peta</h4>
+  <ul>
+    <li>Warna wilayah merepresentasikan indikator kemiskinan yang Anda pilih: <code>X1</code>, <code>X2</code>, <code>P0</code>, <code>P1</code>, atau <code>P2</code>.</li>
+    <li>Skema warna yang digunakan adalah <strong>YlOrRd</strong> (kuning → oranye → merah), di mana warna merah mengindikasikan nilai indikator yang lebih tinggi.</li>
+    <li>Klik suatu wilayah untuk melihat informasi lengkap dari semua indikator.</li>
+    <li>Wilayah tanpa data akan tampak putih polos atau tanpa legenda warna.</li>
+  </ul>
+
+  <h4>Catatan Penting</h4>
+  <ul>
+    <li>Pastikan nama wilayah pada kolom <code>Kab</code> identik (termasuk ejaan, spasi, tanda baca, huruf besar-kecil) dengan <code>nmkab</code> di shapefile.</li>
+    <li>Periksa dan perbaiki ketidaksesuaian dengan melihat daftar validasi wilayah yang ditampilkan di bawah peta.</li>
+  </ul>
+
+</div>
