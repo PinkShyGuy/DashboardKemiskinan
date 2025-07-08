@@ -1,0 +1,20 @@
+## Analisis Deskriptif
+
+Analisis deskriptif adalah tahap pertama dan paling fundamental dalam proses analisis data. Tujuan utamanya adalah untuk merangkum, mengatur, dan menggambarkan karakteristik utama dari suatu set data secara sistematis. Ini membantu peneliti atau analis untuk memahami "apa yang terjadi" dalam data tanpa membuat kesimpulan yang lebih luas atau inferensi tentang populasi yang lebih besar.
+
+## Tujuan Utama Analisis Deskriptif:
+
+1.  **Meringkas Data:** Mengurangi volume data mentah menjadi bentuk yang lebih mudah dipahami dan dikelola.
+2.  **Mengidentifikasi Karakteristik Penting:** Menemukan pola, tren, distribusi, atau hubungan yang menonjol dalam data.
+3.  **Dasar untuk Analisis Lanjut:** Memberikan pemahaman awal yang diperlukan sebelum melakukan analisis inferensial atau prediktif yang lebih kompleks.
+
+## Dua Bentuk Utama Analisis Deskriptif:
+
+1.  **Ukuran Statistik (Numerical Summaries):** Ini adalah angka-angka yang digunakan untuk merangkum karakteristik data.
+    * **Ukuran Tendensi Sentral:**
+        * Mean (Rata-rata): Jumlah semua nilai dibagi dengan jumlah observasi. (Contoh: Rata-rata pendapatan rumah tangga).
+        * Median: Nilai tengah dalam set data yang telah diurutkan. Kurang terpengaruh oleh *outlier* dibandingkan mean. (Contoh: Median harga rumah).
+    * **Ukuran Dispersi (Variabilitas):**
+        * Standar Deviasi: Akar kuadrat dari varians, memberikan ukuran sebaran dalam unit yang sama dengan data asli. (Contoh: Seberapa bervariasi nilai ujian siswa).
+2.  **Visualisasi Data (Graphical Summaries):** Ini adalah representasi visual dari data yang membantu dalam memahami distribusi dan hubungan.
+    * **Box Plot (Box-and-Whisker Plot):** Menyajikan ringkasan lima angka (minimum, Q1, median, Q3, maksimum) dan mengidentifikasi *outlier*.
